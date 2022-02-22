@@ -1,0 +1,34 @@
+<div
+  class="photo"
+  gamUpload
+  (onHover)="isOver = $event"
+  (onUploadFile)="loadImage($event)"
+  [ngClass]="{ sombreado: isOver }"
+  *ngIf="!usingWebcam"
+  #photo
+>
+  Arrastre una imagen o hacer click para cargar una imagen
+</div>
+<webcam
+  [height]="208"
+  [width]="191"
+  mirrorImage="never"
+  *ngIf="usingWebcam"
+  (imageCapture)="capturePhotoFromWebcam($event)"
+  [trigger]="triggerAsObservable()"
+>
+</webcam>
+<div fxLayout fxLayoutGap="10px" fxLayoutAlign="center center">
+  <mat-slide-toggle
+    [checked]="checkedWebcam"
+    (change)="changeOriginPhoto()"
+  ></mat-slide-toggle>
+  <button
+    mat-mini-fab
+    *ngIf="usingWebcam"
+    color="primary"
+    (click)="takePhoto()"
+  >
+    <mat-icon>add_a_photo</mat-icon>
+  </button>
+</div>

@@ -1,0 +1,10 @@
+.align-right {
+  text-align: right;
+}
+.fixed {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-align: right;
+  z-index: 50;
+}

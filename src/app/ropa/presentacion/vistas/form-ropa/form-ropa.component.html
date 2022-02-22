@@ -1,0 +1,73 @@
+<mat-toolbar fxLayout fxLayoutAlign="space-between center">
+  <h3>{{ title }}</h3>
+  <button mat-icon-button mat-dialog-close>
+    <mat-icon>close</mat-icon>
+  </button>
+</mat-toolbar>
+<mat-dialog-content>
+  <form fxLayout="column" method="post" [formGroup]="group">
+    <div fxLayout fxLayout="space-between" fxLayoutGap="10px">
+      <div fxFlex="1 1 33%">
+        <gam-photo
+          formControlName="photo"
+          [photoByDefault]="photoToShow"
+        ></gam-photo>
+      </div>
+
+      <div fxFlex="1 1 33%">
+        <mat-form-field appearance="outline">
+          <mat-label>Tipo</mat-label>
+          <input type="text" matInput formControlName="tipo" required />
+          <mat-error>Campo Obligatorio</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Estilo</mat-label>
+          <input type="text" matInput formControlName="estilo" />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Talla</mat-label>
+          <input type="text" matInput formControlName="talla" />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Precio</mat-label>
+          <input type="text" matInput formControlName="precio" />
+        </mat-form-field>
+      </div>
+
+      <div fxFlex="1 1 33%">
+        <mat-form-field appearance="outline">
+          <mat-label>Color</mat-label>
+          <input type="text" matInput formControlName="color" />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Marca</mat-label>
+          <input type="text" matInput formControlName="marca" />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Unidades</mat-label>
+          <input type="text" matInput formControlName="unidades" />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Activo</mat-label>
+          <input type="text" matInput formControlName="isActive" />
+        </mat-form-field>
+      </div>
+    </div>
+    <div
+      fxLayout
+      fxLayoutAlign="end center"
+      fxLayoutGap="20px"
+      class="container-buttons"
+    >
+      <button mat-button mat-dialog-close color="warn">Cancelar</button>
+      <button
+        mat-raised-button
+        color="primary"
+        (click)="save()"
+        [disabled]="group.invalid"
+      >
+        Guardar
+      </button>
+    </div>
+  </form>
+</mat-dialog-content>

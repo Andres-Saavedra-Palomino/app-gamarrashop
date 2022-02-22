@@ -1,0 +1,26 @@
+.container-modal {
+  width: 650px;
+}
+.container-modal .mat-dialog-container {
+  padding: 0;
+}
+.container-modal .mat-toolbar {
+  color: #444;
+  background: #ececec;
+  background: -webkit-linear-gradient(#fff 0%, #72a2cf);
+  background: -moz-linear-gradient(#fff 0%, #e0e0e0);
+  background: -ms-linear-gradient(#fff 0%, #e0e0e0);
+  background: -linear-gradient(#fff 0%, #e0e0e0);
+}
+.container-modal .mat-dialog-content {
+  margin: 0;
+  padding: 24px;
+}
+.container-modal .container-buttons {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  padding-top: 10px;
+}
+
+.container-modal button {
+  font-weight: bold;
+}

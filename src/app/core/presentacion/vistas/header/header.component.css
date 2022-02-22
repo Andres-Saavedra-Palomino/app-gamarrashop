@@ -1,0 +1,13 @@
+mat-toolbar {
+  /* background-color: whitesmoke !important; */
+  border-bottom: 1px solid #6b6b6b;
+}
+button span {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.menu-bar mat-icon {
+  width: 32px;
+  font-size: 32px;
+}

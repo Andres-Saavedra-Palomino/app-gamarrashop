@@ -1,0 +1,29 @@
+.menu-options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+mat-list-option:hover {
+  background-color: #ff5722 !important;
+}
+mat-list-option:hover .menu-options {
+  color: #fff;
+}
+.activeLink {
+  /* background-color: #039be5 !important; */
+  background-color: #ff5722 !important;
+}
+.activeLink .menu-options {
+  color: #fff;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+  color: #000;
+  font-size: 14px;
+  text-decoration: none;
+  font-family: Montserrat;
+}

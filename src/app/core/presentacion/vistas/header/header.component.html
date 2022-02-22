@@ -1,0 +1,30 @@
+<mat-toolbar fxLayout fxLayoutAlign="space-between center">
+  <div fxLayout fxLayoutAlign="center center">
+    <img src="../../../../../assets/img/logo-tienda-ropa.png" alt="" />
+  </div>
+  <div>
+    <button type="button" mat-icon-button class="menu-bar">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <button mat-button class="profile" [matMenuTriggerFor]="menu">
+      <mat-icon svgIcon="sinfoto"></mat-icon>
+      <span>Andres Saavedra</span>
+      <mat-icon>keyboard_arrow_down</mat-icon>
+    </button>
+  </div>
+
+  <mat-menu #menu="matMenu">
+    <button type="button" mat-menu-item (click)="lock()">
+      <mat-icon>lock</mat-icon>
+      <span>Bloquear la pantalla</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>dark_mode</mat-icon>
+      <span>Modo Opaco</span>
+    </button>
+    <button mat-menu-item (click)="logout()">
+      <mat-icon>exit_to_app</mat-icon>
+      <span>Cerrar Sesión</span>
+    </button>
+  </mat-menu>
+</mat-toolbar>

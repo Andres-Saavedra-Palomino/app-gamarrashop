@@ -1,0 +1,14 @@
+<mat-selection-list [multiple]="false">
+  <mat-list-option
+    *ngFor="let menu of listMenu"
+    [routerLink]="menu.url"
+    routerLinkActive="activeLink"
+  >
+    <div class="menu-options">
+      <button mat-icon-button>
+        <mat-icon [svgIcon]="menu.icon"></mat-icon>
+      </button>
+      <span>{{ menu.title }}</span>
+    </div>
+  </mat-list-option>
+</mat-selection-list>

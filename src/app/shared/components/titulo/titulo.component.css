@@ -1,0 +1,16 @@
+mat-toolbar {
+  /* background-color: #039be5 !important; */
+  height: 80px;
+}
+h2 {
+  font-family: Montserrat;
+  font-weight: bold;
+  /* color: #fff; */
+  line-height: 80px;
+  display: flex;
+}
+mat-icon {
+  width: 48px;
+  height: 48px;
+  font-size: 48px;
+}

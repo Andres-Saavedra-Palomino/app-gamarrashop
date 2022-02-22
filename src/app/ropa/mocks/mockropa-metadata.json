@@ -1,0 +1,38 @@
+[
+	{
+		"field": "id",
+		"title": "ID"
+	},
+	{
+		"field": "tipo",
+		"title": "Tipo"
+	},
+	{
+		"field": "estilo",
+		"title": "Estilo"
+	},
+	{
+		"field": "talla",
+		"title": "Talla"
+	},
+	{
+		"field": "precio",
+		"title": "Precio Unitario"
+	},
+	{
+		"field": "color",
+		"title": "Color"
+	},
+	{
+		"field": "marca",
+		"title": "Marca"
+	},
+	{
+		"field": "unidades",
+		"title": "Unidades"
+	},
+	{
+		"field": "isActive",
+		"title": "Activo"
+	}
+]

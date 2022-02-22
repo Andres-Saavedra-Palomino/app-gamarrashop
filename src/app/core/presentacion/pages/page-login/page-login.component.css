@@ -1,0 +1,38 @@
+.container {
+  height: 100vh;
+}
+.presentation {
+  padding: 150px;
+  background: url("/assets/img/hdprincipal.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.presentation mat-icon {
+  width: 100px;
+  height: 100px;
+}
+.presentation h2 {
+  font-size: 64px;
+  color: #fff;
+}
+.login {
+  background-color: #fff;
+  min-width: 360px;
+}
+.login form {
+  width: 100%;
+}
+.login h3 {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.87);
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: -0.1px !important;
+}
+.login .credenciales {
+  width: 80%;
+}
+.credenciales button {
+  font-size: 18px;
+}

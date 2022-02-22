@@ -1,0 +1,15 @@
+mat-sidenav-container,
+mat-sidenav-content,
+mat-sidenav {
+  min-height: 100vh;
+}
+mat-sidenav {
+  width: 280px;
+}
+.logo {
+  height: 64px;
+}
+.logo button mat-icon {
+  width: 32px;
+  font-size: 32px;
+}
